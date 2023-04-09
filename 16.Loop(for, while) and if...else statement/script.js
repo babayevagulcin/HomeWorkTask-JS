@@ -8,6 +8,12 @@ console.log(calcAge(0));
 console.log(calcAge(20));
 
 //1.Loop text
+let str = "Front-end Developer";
+for(let i = 0; i < str.length; i++){
+
+console.log(str.slice(0, i+1));
+
+}
 
 
 // 3.Sum of even numbers(e.g: 2,4,6...) in 10.
