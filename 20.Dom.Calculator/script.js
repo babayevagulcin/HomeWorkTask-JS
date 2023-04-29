@@ -36,12 +36,11 @@ divisionBtn.addEventListener("click", function () {
     alert("Enter number")
   }
   if (value2Input.value === "0") {
-    resultInput.innerText = "0";
+    resultInput.innerText = "Error";
   }
 });
 resetBtn.addEventListener("click", function () {
   value1Input.value = "";
   value2Input.value = "";
   resultInput.innerText = "0";
-  
 });
