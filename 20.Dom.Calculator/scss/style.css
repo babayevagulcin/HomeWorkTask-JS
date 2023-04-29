@@ -46,6 +46,7 @@ section .container .content .calculator button {
 }
 section .container .content .calculator .value {
   width: 450px;
+  margin: 0 10px;
   display: flex;
 }
 section .container .content .calculator .value input {
@@ -58,4 +59,16 @@ section .container .content .calculator .value #value1 {
 }
 section .container .content .calculator .reset-btn {
   background-color: #ff4500;
+}
+@media only screen and (max-width: 479px) {
+  section .container .content .calculator {
+    width: 100%;
+    padding: 0 20px;
+  }
+  section .container .content .calculator .value {
+    width: 100%;
+  }
+  section .container .content .calculator .value input {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
