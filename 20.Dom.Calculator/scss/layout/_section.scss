@@ -1,0 +1,48 @@
+section {
+  height: 80vh;
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    .content {
+      background-color: $pure-bisque;
+      border-radius: 10px;
+      height: 600px;
+      @include flexBox;
+      margin-top: 100px;
+      .calculator {
+        @include flexBox;
+        flex-direction: column;
+        row-gap: 20px;
+        width: 450px;
+        #result {
+          border-radius: 8px;
+          width: 100%;
+          padding: 10px;
+          text-align: end;
+          background-color: $pure-dark;
+          color: $pure-white;
+          font-size: 20px;
+        }
+        button {
+          width: 100%;
+          padding: 10px;
+        }
+        .value {
+          width: 450px;
+          display: flex;
+          input {
+            width: 250px;
+            padding: 10px;
+            outline: none;
+          }
+          #value1 {
+            margin-right: 10px;
+          }
+        }
+        .reset-btn {
+          background-color: $pure-orange;
+        }
+      }
+    }
+  }
+}
