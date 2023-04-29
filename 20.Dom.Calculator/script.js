@@ -43,7 +43,5 @@ resetBtn.addEventListener("click", function () {
   value1Input.value = "";
   value2Input.value = "";
   resultInput.innerText = "0";
-  if (value1Input.value === "" || value2Input.value === "") {
-    alert("Enter number");
-  }
+  
 });
