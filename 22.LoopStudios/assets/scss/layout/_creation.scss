@@ -1,0 +1,116 @@
+#creations {
+  padding: 100px 0;
+  color: $pure-dark;
+  .creations {
+    .content-btn {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 50px;
+      h1 {
+        font-weight: 200;
+        font-size: 48px;
+        text-transform: uppercase;
+      }
+      .see {
+        border: 1px solid $pure-dark;
+        padding: 10px 45px;
+        border-radius: 0;
+        letter-spacing: 2px;
+        font-size: 14px;
+        &:hover {
+          background-color: $pure-dark;
+          color: $pure-white;
+        }
+      }
+    }
+    .cards {
+      .boxs {
+        position: relative;
+        &:hover {
+          opacity: 0.5;
+          cursor: pointer;
+        }
+        .desktop {
+          width: 100%;
+          margin-top: 20px;
+        }
+        .none {
+          display: none;
+        }
+        .img-text {
+          position: absolute;
+          bottom: 8px;
+          left: 16px;
+          color: $pure-white;
+          font-size: 32px;
+          font-weight: 300;
+          line-height: 32px;
+          text-transform: uppercase;
+        }
+      }
+      .none-btn {
+        display: none;
+        padding-top: 20px;
+        .see-all {
+          border: 1px solid $pure-dark;
+          width: 30%;
+          padding: 10px 45px;
+          border-radius: 0;
+          letter-spacing: 2px;
+          font-size: 14px;
+          &:hover {
+            background-color: $pure-dark;
+            color: $pure-white;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    padding: 20px;
+    .creations {
+      .content-btn {
+        h1 {
+          font-weight: 200;
+          font-size: 32px;
+          text-align: center;
+          width: 100%;
+        }
+        .see {
+          display: none;
+        }
+      }
+      .cards {
+        .boxs {
+          .desktop {
+            display: none;
+          }
+          .none {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+          }
+          .img-text {
+            font-size: 20px;
+          }
+        }
+        .none-btn {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .creations {
+      .cards {
+        .none-btn {
+            padding-bottom: 50px;
+          .see-all {
+            padding: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}
