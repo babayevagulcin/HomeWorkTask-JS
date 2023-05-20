@@ -1,6 +1,8 @@
-let menuIcon = document.querySelector(".menu-icon");
-let navToogle = document.querySelector(".toggle");
+let menuIcon = document.querySelector("#menu-icon");
+let navToogle = document.querySelector(".loop");
+let header = document.querySelector("#header");
 
 menuIcon.addEventListener("click", function () {
-  navToogle.classList.toggle("navbar-toogle");
+  header.classList.toggle("background");
+  navToogle.classList.toggle("show");
 });

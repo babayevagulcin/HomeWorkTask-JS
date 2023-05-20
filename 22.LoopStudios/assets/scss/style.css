@@ -132,84 +132,50 @@ table {
   border-spacing: 0;
 }
 
-header {
+#header {
   height: 100vh;
   background-image: url(/assets/images/desktop/image-hero.jpg);
   background-size: cover;
   padding-top: 50px;
 }
-header .header .navbar-toogle {
-  display: block;
-}
-header .header .nav-toggle {
-  display: none;
-}
-header .header .nav-toggle .toggle {
-  padding: 50px 5%;
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  left: 0px;
-  top: 0px;
-  background: #000;
-}
-header .header .nav-toggle .toggle .loop-nav {
+#header .header {
   display: flex;
   justify-content: space-between;
 }
-header .header .nav-toggle .toggle ul {
-  margin-top: 200px;
-}
-header .header .nav-toggle .toggle ul li {
-  padding: 10px 0;
-}
-header .header .nav-toggle .toggle ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 200;
-  font-size: 32px;
-}
-header .header .loop {
-  display: flex;
-  justify-content: space-between;
-}
-header .header .loop .logo {
+#header .header .logo {
   cursor: pointer;
 }
-header .header .loop ul {
+#header .header .loop ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
-header .header .loop ul li {
+#header .header .loop ul li {
   position: relative;
 }
-header .header .loop ul li a {
+#header .header .loop ul li a {
   color: #fff;
   text-decoration: none;
 }
-header .header .loop ul li a:hover::after {
+#header .header .loop ul li a:hover::after {
   content: "";
   border: 1px solid #fff;
   display: block;
   position: absolute;
   width: 100%;
+  margin-top: 5px;
 }
-header .header .loop .toggle {
-  background-color: #000;
-  display: block;
-}
-header .header .menu-icon {
+#header .header #menu-icon {
   display: none;
   cursor: pointer;
 }
-header .content {
+#header .content {
   height: 100vh;
   display: flex;
   align-items: center;
 }
-header .content h1 {
+#header .content h1 {
   color: #fff;
   border: 2px solid #fff;
   width: 60%;
@@ -220,19 +186,35 @@ header .content h1 {
   line-height: 70px;
 }
 @media only screen and (max-width: 991px) {
-  header .header {
-    display: flex;
-    justify-content: space-between;
+  #header.background {
+    background: #000;
   }
-  header .header .loop ul li {
+  #header .header .loop {
     display: none;
   }
-  header .header .menu-icon {
+  #header .header .loop.show {
+    display: flex;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    background: #000;
+    height: 100vh;
+  }
+  #header .header .loop.show ul {
+    flex-direction: column;
+    align-items: first baseline;
+  }
+  #header .header .loop.show ul li a {
+    font-size: 24px;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+  #header .header #menu-icon {
     display: block;
     color: #fff;
     font-size: 24px;
   }
-  header .content h1 {
+  #header .content h1 {
     width: 100%;
     padding: 20px;
     font-size: 36px;
